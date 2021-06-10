@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="js/responsive.js"></script>
+<link rel="stylesheet" href="css/navbar.css">
+
+<title>Sadic Smile - Home</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="icon"  href="images/marca sec.ico">
+
+<!-- Main css -->
+<!-- <link rel="stylesheet" href="css/bootstrap.css">
+ --><link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+     </script>
+     <script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('#cabeza').outerHeight(true);
+    var altura_del_menu = $('#menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('#menu').addClass('fixed');
+        $('.noticia').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('#menu').removeClass('fixed');
+        $('.noticia').css('margin-top', '0');
+    }
+}
+
+</script>
+
+     <header id="cabeza">
+          <img src="images/header.jpg" alt="cabecera">
+     </header>
+ 
+<!-- PRE LOADER -->
+
+     <div id="fotona">
+
+          
+          <!-- Navigation section  -->
+          <nav id="menu">
+               <div class="topnav" id="myTopNav">
+                    <a href="javascript:void(0);" class="icon" onclick="doResponsive()">&#9776;</a>
+                    <a href="index.html">HOME</a>
+                   <div class="dropdown">
+                       <button class="dropbtn">ABOUT <i class="fa fa-caret-down"></i></button>
+                       <div class="dropdown-content">
+                           <a href="band.html">BAND</a>
+                           <a href="members.html">MEMBERS</a>
+                         </div>
+                   </div>
+                   <div class="dropdown">
+                        <button class="dropbtn">MEDIA
+                             <i class="fa fa-caret-down"></i>
+                         </button>
+                         <div class="dropdown-content">
+                              <a href="media.html">PHOTOS</a>
+                              <a href="video.html">VIDEO</a>
+                         </div>
+                    </div>
+                    <a href="mercha.html">SHOP</a>
+                    <a href="contact.html">CONTACT</a>
+                 </div>
+           </nav>
+
+          <!-- Home Section -->
+
+          <section id="home" class="main-home parallax-section noticia">
+               <div class="overlay"></div>
+               <div id="particles-js"></div>
+               <div class="container"></div>
+          </section>
+
+          <!-- Blog Section -->
+
+         <!--  ajustar el ancho del bloque, colocar la imagen a la derecha y cambiar el color del título del artículo -->
+
+          <section id="blog"> 
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-offset-1 col-md-10 col-sm-20">
+                              <div class="blog-post-thumb">
+                                   <div class="blog-post-image">
+                                        <a href="single-post.html">
+                                             <img src="images/lalacore018.jpg" class="img-responsive" alt="Lalacore 018">
+                                        </a>
+                                   </div>
+                                   <div class="blog-post-title">
+                                        <h3><a href="single-post.html" id="winner">Ganadores del Lalacore018 en la categoría de "metal"</a></h3>
+                                   </div>
+                                   <div class="blog-post-format">
+                                        <span><a href="#"><img src="images/logo-black-wolf.jpg" class="img-responsive img-circle"> Black Wolf Studio</a></span>
+                                        <span id="fecha"><i class="fa fa-date" ></i>16 Noviembre, 2018</span>
+                                        <span><a href="#"><i class="fa fa-comment-o"></i> 35 Comentarios</a></span>
+                                   </div>
+                                   <div class="blog-post-des">
+                                        <p>En su primera participación, y contra todo pronóstico, Sadic Smile logra alcanzar la victoria en el concurso de bandas regional "Lalacore" en su edición de 2018. Pese a no contentar a la minoría de los votantes y asistentes, han tenido una muy buena aceptación y acogida por parte de la escena canaria. El buen ambiente y la familiaridad en el backstage convirtió el concurso en una noche como otra cualquiera, compartiendo escenario con bandas amigas.</p>
+                                        <a href="single-post.html" class="btn btn-default">Continuar leyendo</a>
+                                   </div>
+                              </div>                            
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- Footer Section -->
+
+          <footer>
+               <div class="container">
+                    <div class="row">
+
+                         <div class="col-md-5 col-md-offset-1 col-sm-6">
+                              <h3><a href="https://www.instagram.com/blackwolf_designstudio/" target="_blank">Black Wolf Studio</h3></a>
+                              <p>Todo el contenido de esta página web ha sido creado por Black Wolf Studio, quien gestiona la propia página web. Cualquier consulta, no dude en ponerse en contacto con nosotros.</p>
+                              <div class="footer-copyright">
+                                   <p>Copyright &copy; 2019</p>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-md-offset-1 col-sm-6">
+                              <h3>Contact us</h3>
+                              <p><i class="fa fa-globe"></i> Santa Cruz de Tenerife, 38001. España</p>
+                              <p><i class="fa fa-phone"></i> (+34) 670 014 633</p>
+                              <p><i class="fa fa-save"></i> sadicsmilemetal@gmail.com</p>
+                         </div>
+
+                         <div class="clearfix col-md-12 col-sm-12">
+                              <hr>
+                         </div>
+
+                         <div class="col-md-12 col-sm-12">
+                              <ul class="social-icon">
+                                   <li><a href="https://www.facebook.com/SadicSmileOfficial/" target="_blank" class="fa fa-facebook"></a></li>
+                                   <li><a href="https://www.instagram.com/sadicsmile_official/" target="_blank" class="fa fa-instagram"></a></li>
+                                   <li><a href="https://www.youtube.com/channel/UCt-e9SHfGENLve55K7OK0aw" target="_blank" class="fa fa-youtube"></a></li>
+                              </ul>
+                         </div>
+                         
+                    </div>
+               </div>
+          </footer>
+
+          <!-- Back top -->
+          <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+          <!-- SCRIPTS -->
+
+          <script src="js/jquery.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/particles.min.js"></script>
+          <script src="js/app.js"></script>
+          <script src="js/jquery.parallax.js"></script>
+          <script src="js/smoothscroll.js"></script>
+          <script src="js/custom.js"></script>
+     </div>
+
+</body>
+</html>
