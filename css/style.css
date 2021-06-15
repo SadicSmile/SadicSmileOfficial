@@ -80,6 +80,10 @@ p {
     letter-spacing: 0.2px;
 }
 
+#textotienda {
+  font-size: 13px;
+}
+
 .btn-success:focus {
   background-color: #000;
   border-color: transparent;
@@ -703,9 +707,9 @@ footer .footer-copyright {
   margin:  auto;
 }
 
-.nav .navbar{
+ .nav .navbar{
   margin: auto;
-}
+} 
 
 .blogg{
   
